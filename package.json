@@ -1,5 +1,5 @@
 {
-  "name": "tampermonkey-demo",
+  "name": "tampermonkey-template",
   "type": "module",
   "scripts": {
     "dev": "vite build && node ./template/index.js dev && vite build -w",

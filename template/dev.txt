@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         tm-demo
 // @namespace    tm
-// @version      2024-05-20
+// @version      0.0.1
 // @description  tampermonkey 模板
 // @author       tm
 // @match        http*://*/*

@@ -4,6 +4,7 @@ import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
+import { name } from "./package.json";
 
 const __dirname = resolve();
 
@@ -29,7 +30,8 @@ export default defineConfig({
     cssCodeSplit: true,
     lib: {
       entry: resolve(__dirname, "./src/main.ts"),
-      name: "TampermoneyDemo",
+      name,
+      fileName: name,
       formats: ["umd"],
     },
   },

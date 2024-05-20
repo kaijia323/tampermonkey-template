@@ -3,12 +3,16 @@ import { resolve } from "node:path";
 import { argv } from "node:process";
 
 const __dirname = resolve();
+const packageJson = JSON.parse(
+  readFileSync(resolve(__dirname, "package.json"))
+);
+const { name } = packageJson;
 
 const template = {
   dev: resolve(__dirname, "template/dev.txt"),
   prod: resolve(__dirname, "template/prod.txt"),
 };
-const output = resolve(__dirname, "dist/tampermonkey-demo.umd.cjs");
+const output = resolve(__dirname, `dist/${name}.umd.cjs`);
 
 const build = env => {
   if (env === "dev") {
