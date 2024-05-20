@@ -1,8 +1,9 @@
 // ==UserScript==
-// @name         tampermonkey-demo
+// @name         tm-demo
+// @namespace    tm
 // @version      2024-05-20
-// @description  try to take over the world!
-// @author       You
+// @description  tampermonkey 模板
+// @author       tm
 // @match        http*://*/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
